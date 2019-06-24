@@ -18,6 +18,10 @@ header {
 }
 
 @media (min-width: 1024px) {
+    .toolbar {
+        display: none;
+    }
+
     nav {
         width: 100%;
         background-color: #fff;
@@ -47,9 +51,7 @@ header {
     .nav {
         display: none;
     }
-}
 
-@media (max-width: 1023px) {
     #check {
         display: none;
     }
