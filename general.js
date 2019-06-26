@@ -1,9 +1,10 @@
-let height = screen.height;
-
-window.onscroll = function(){
-    let tamanho = window.innerHeight;
+window.onscroll = function() {
+    let screen = window.innerHeight;
     let scroll = window.pageYOffset;
-    if (scroll > tamanho) {
-        console.log('test');
+    if (scroll >= screen) {
+        document.getElementById('coruja').style.display = "block";
+    }
+    else {
+        document.getElementById('coruja').style.display = "none";
     }
 };
