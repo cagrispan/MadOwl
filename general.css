@@ -58,10 +58,12 @@ header {
 
     .header-mobile {
         width: 100%;
-        background-color: #000;
-        height: 80px;
+        background-color: #fff;
+        height: 70px;
         top: 0;
         position: fixed;
+        box-shadow: 0px 10px 8px rgba(150, 150, 150, 0.77);
+        visibility: hidden;
     }
 
     .container {
@@ -78,12 +80,13 @@ header {
 
     #icone {
         cursor: pointer;
-        padding-top: 10px;
+        padding-top: 5px;
         padding-left: 10px;
         margin-top: 10px;
         margin-left: 10px;
         position: absolute;
         z-index: 1;
+        visibility: visible;
     }
 
     #image {
@@ -93,7 +96,7 @@ header {
     #coruja {
         height: 60px;
         float: right;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-right: 10px;
         display: none;
     }
@@ -105,12 +108,13 @@ header {
         position: fixed;
         transition: all .2s linear;
         left: -70vw;
+        visibility: visible;
     }
 
     nav {
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 70px;
     }
 
     nav a {
@@ -132,7 +136,7 @@ header {
     }
 
     .link:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     #check:checked ~ .barra {
