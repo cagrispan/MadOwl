@@ -9,7 +9,7 @@ body {
 }
 
 .header-big {
-    height: calc(100vh - 70px);
+    height: 100vh;
 }
 
 header {
@@ -22,18 +22,17 @@ header {
         display: none;
     }
 
-    nav {
+    #nav-pc {
         width: 100%;
-        background-color: #fff;
+        background-color: #000;
         display: flex;
         height: 70px;
-        position: sticky;
+        position: fixed;
         top: 0px;
     }
 
     .div-nav {
         width: 100%;
-        box-shadow: 0px 10px 8px rgba(150, 150, 150, 0.77);
         display: flex;
     }
 
@@ -42,6 +41,7 @@ header {
         flex-direction: row;
         list-style: none;
         margin: auto;
+        margin-right: 20px;
         flex-wrap: wrap;
         padding: 5px;
     }
@@ -49,6 +49,13 @@ header {
     .bloco-big {
         width: 100%;
         height: 100vh;
+    }
+
+    #coruja-pc {
+        height: 60px;
+        margin-top: 5px;
+        margin-left: 10px;
+        display: none;
     }
 }
 
@@ -63,11 +70,10 @@ header {
 
     .header-mobile {
         width: 100%;
-        background-color: #fff;
+        background-color: #000;
         height: 70px;
         top: 0;
         position: fixed;
-        box-shadow: 0px 10px 8px rgba(150, 150, 150, 0.77);
         visibility: hidden;
     }
 
@@ -107,11 +113,11 @@ header {
     }
 
     .barra {
-        background-image: linear-gradient(45deg, magenta, cyan, yellow);
+        background-color: rgba(0, 0, 0, 0.9);
         height: 100%;
         width: 70vw;
         position: fixed;
-        transition: all .2s linear;
+        transition: transform .2s linear;
         left: -70vw;
         visibility: visible;
     }
@@ -132,50 +138,35 @@ header {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         transition: all .2s linear;
-        color: #000;
-        opacity: 0;
+        color: #fff;
+        opacity: 1;
         margin-top: 200px;
         text-align: center;
         font-family: 'Concert One', cursive;
-    }
-
-    .a-1 {
-        background-color: yellow;
-    }
-
-    .a-2 {
-        background-color: cyan;
-    }
-
-    .a-3 {
-        background-color: magenta;
+        background-color: rgba(100, 100, 100, 0.7);
+        margin-top: 0;
     }
 
     .link:hover {
-        transform: scale(1.1);
+        background-color: rgba(70, 70, 70, 0.7);
     }
 
     #check:checked ~ .barra {
         transform: translateX(70vw);
     }
 
-    #check:checked ~ .barra nav a .link {
-        opacity: 1;
-        margin-top: 0;
-        transition-delay: .2s;
-    }
 }
 
 .item {
     margin: 0 15px;
     padding: 15px;
     padding-top: 10px;
-    color: #000;
     font-weight: 100;
     font-size: 20px;
     text-decoration: none;
     display: flex;
     align-items: baseline;
+    color: #fff;
 }
 
 li {
